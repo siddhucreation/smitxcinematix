@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=75b455b5-75b8-461b-ba3e-b9d8abb9c9dc
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smxt cinematix | Cinematic Portfolio & Bookings</title>
+    <!-- Meta Description for SEO -->
+    <meta name="description"
+        content="Official portfolio of Smit. God-level mobile videography, premium video editing, and high-end photography. Book your cinematic session directly via WhatsApp.">
+    
+    <!-- Open Graph (OG) Meta Tags for WhatsApp Link Preview -->
+    <meta property="og:title" content="smxt cinematix | Cinematic Portfolio & Bookings">
+    <meta property="og:description" content="Official portfolio of Brijesh. God-level mobile videography, premium video editing, and high-end photography. Book your cinematic session directly via WhatsApp.">
+    <meta property="og:image" content="logo.jpg">
+    <meta property="og:url" content="https://brijeshptl20.netlify.app/">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons (Premium Vectors) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Animate On Scroll (AOS) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cinematic Film Grain Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Custom Vibe Cursor Elements -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Camera Shutter Preloader -->
+    <div id="preloader" class="preloader">
+    <img src="logo.jpg" alt="Loading..." class="preloader-image">
+</div>
+
+
+    <!-- Smart Sticky Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <img src="logo.jpg" alt="smxt cinematix Logo" class="header-logo-img">
+                <span class="logo-text">smxt<span class="logo-accent">cinematix</span></span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#why-choose-us" class="nav-link">Why Us</a>
+                <a href="#booking" class="btn btn-nav">Book Now</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section (First Fold) -->
+    <section id="home" class="hero-section">
+
+        <div class="container hero-content">
+            <div class="hero-text-wrapper" id="heroTextWrapper">
+                <span class="hero-subtitle" data-aos="fade-down" data-aos-delay="200">CINEMATOGRAPHER & EDITOR</span>
+                <h1 class="hero-title" data-aos="zoom-out" data-aos-delay="400">
+                    TURNING <span class="text-gradient">MOMENTS</span> INTO <span class="text-glow">MEMORIES</span>
+                </h1>
+                <p class="hero-desc" data-aos="fade-up" data-aos-delay="600">
+                    High-end mobile videography, professional editing, and premium visual storytelling tailored to elevate
+                    your brand or personal memories.
+                </p>
+                <div class="hero-ctas" data-aos="fade-up" data-aos-delay="800">
+                    <a href="#booking" class="btn btn-primary">Book a Session</a>
+                    <a href="#portfolio" class="btn btn-outline glass-btn">Explore Work</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="scroll-indicator">
+            <a href="#services" class="scroll-arrow">
+                <i class="ri-arrow-down-double-line"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tagline">WHAT I DO</span>
+                <h2 class="section-title">CREATIVE SERVICES</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <video class="service-video" autoplay muted loop playsinline src="https://assets.mixkit.co/videos/preview/mixkit-recording-with-a-camera-with-a-stabilizer-34400-large.mp4"></video>
+                    <div class="card-glow"></div>
+                    <div class="service-icon-box">
+                        <i class="ri-smartphone-line service-icon"></i>
+                    </div>
+                    <h3 class="service-card-title">Mobile Videography</h3>
+                    <p class="service-card-desc">Cinematic, high-definition shots captured entirely on mobile
+                        stabilizers and gimbals. Perfect for social media, events, and dynamic motion reels.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <video class="service-video" autoplay muted loop playsinline src="https://assets.mixkit.co/videos/preview/mixkit-video-editor-working-on-a-project-51673-large.mp4"></video>
+                    <div class="card-glow"></div>
+                    <div class="service-icon-box">
+                        <i class="ri-clapperboard-line service-icon"></i>
+                    </div>
+                    <h3 class="service-card-title">Video Editing</h3>
+                    <p class="service-card-desc">Professional post-production, advanced color grading, sound design, and
+                        transitions optimized for engaging Instagram Reels, YouTube Vlogs, and Promos.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <video class="service-video" autoplay muted loop playsinline src="https://assets.mixkit.co/videos/preview/mixkit-taking-photos-with-a-professional-camera-34405-large.mp4"></video>
+                    <div class="card-glow"></div>
+                    <div class="service-icon-box">
+                        <i class="ri-camera-3-line service-icon"></i>
+                    </div>
+                    <h3 class="service-card-title">Photography</h3>
+                    <p class="service-card-desc">High-quality portrait, fashion, lifestyle, and event photography using
+                        professional DSLR systems. Designed to capture raw emotions and perfect angles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tagline">SELECTED WORK</span>
+                <h2 class="section-title">PORTFOLIO SHOWCASE</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <!-- Filters -->
+            <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="videos">Videos</button>
+                <button class="filter-btn" data-filter="photos">Photos</button>
+                <button class="filter-btn" data-filter="reels">Reels</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="200">
+                <!-- Item 1: Video -->
+                <div class="portfolio-item item-video" data-category="videos">
+                    <div class="portfolio-media-wrapper">
+                        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80"
+                            alt="Cinematic Video Work" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-item-tag">Video</span>
+                                <h4 class="portfolio-item-title">Cinematic Brand Story</h4>
+                            </div>
+                            <div class="portfolio-action-icon">
+                                <i class="ri-play-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Photo -->
+                <div class="portfolio-item item-photo" data-category="photos">
+                    <div class="portfolio-media-wrapper">
+                        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=800&q=80"
+                            alt="DSLR Portrait Work" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-item-tag">Photo</span>
+                                <h4 class="portfolio-item-title">Golden Hour Portrait</h4>
+                            </div>
+                            <div class="portfolio-action-icon">
+                                <i class="ri-eye-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Reel -->
+                <div class="portfolio-item item-reel" data-category="reels">
+                    <div class="portfolio-media-wrapper">
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80"
+                            alt="Social Media Reel Work" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-item-tag">Reel</span>
+                                <h4 class="portfolio-item-title">Urban Street Style</h4>
+                            </div>
+                            <div class="portfolio-action-icon">
+                                <i class="ri-film-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Video -->
+                <div class="portfolio-item item-video" data-category="videos">
+                    <div class="portfolio-media-wrapper">
+                        <img src="https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80"
+                            alt="Cinematic Video Work" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-item-tag">Video</span>
+                                <h4 class="portfolio-item-title">Nature & Drone B-Roll</h4>
+                            </div>
+                            <div class="portfolio-action-icon">
+                                <i class="ri-play-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Photo -->
+                <div class="portfolio-item item-photo" data-category="photos">
+                    <div class="portfolio-media-wrapper">
+                        <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=800&q=80"
+                            alt="Fashion Photography Work" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-item-tag">Photo</span>
+                                <h4 class="portfolio-item-title">Studio Fashion Edit</h4>
+                            </div>
+                            <div class="portfolio-action-icon">
+                                <i class="ri-eye-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Reel -->
+                <div class="portfolio-item item-reel" data-category="reels">
+                    <div class="portfolio-media-wrapper">
+                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=800&q=80"
+                            alt="Social Media Reel Work" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-item-tag">Reel</span>
+                                <h4 class="portfolio-item-title">Fast-Paced Travel Vlog</h4>
+                            </div>
+                            <div class="portfolio-action-icon">
+                                <i class="ri-film-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="why-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tagline">MY PROMISE</span>
+                <h2 class="section-title">WHY CHOOSE ME</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="why-grid">
+                <!-- Feature 1 -->
+                <div class="why-card" data-number="01" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="why-icon-box">
+                        <i class="ri-flashlight-line why-icon"></i>
+                    </div>
+                    <h4 class="why-card-title">Fast Delivery</h4>
+                    <p class="why-card-desc">No endless waiting. Get your edited videos and high-res photos delivered
+                        within the agreed timeline.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="why-card" data-number="02" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="why-icon-box">
+                        <i class="ri-shield-star-line why-icon"></i>
+                    </div>
+                    <h4 class="why-card-title">High Quality</h4>
+                    <p class="why-card-desc">Crisp 4K resolutions, professional camera systems, and optimized exports
+                        for stunning clarity.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="why-card" data-number="03" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="why-icon-box">
+                        <i class="ri-magic-line why-icon"></i>
+                    </div>
+                    <h4 class="why-card-title">Creative Edits</h4>
+                    <p class="why-card-desc">Unique color mapping, seamless beat-matching transitions, and custom visual
+                        effects.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="why-card" data-number="04" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="why-icon-box">
+                        <i class="ri-headset-line why-icon"></i>
+                    </div>
+                    <h4 class="why-card-title">24/7 Support</h4>
+                    <p class="why-card-desc">Consistent communication and revisions to guarantee the output perfectly
+                        matches your vision.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Booking Form Section (Pre-Footer) -->
+    <section id="booking" class="booking-section section-padding">
+        <div class="container">
+            <div class="booking-container" data-aos="fade-up">
+                <div class="booking-header">
+                    <span class="booking-tagline">SECURE YOUR DATE</span>
+                    <h2 class="booking-title">BOOK YOUR CINEMATIC SESSION</h2>
+                    <p class="booking-desc">Fill out your details below and request a customized quote. Brijesh will
+                        respond instantly on WhatsApp to finalize requirements.</p>
+                </div>
+
+                <form id="whatsappBookingForm" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="fullName" class="form-control" placeholder=" " required>
+                            <label for="fullName">Full Name</label>
+                            <span class="error-msg" id="nameError">Name is required</span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="mobileNumber" class="form-control" placeholder=" " required>
+                            <label for="mobileNumber">Mobile Number (Calling)</label>
+                            <span class="error-msg" id="phoneError">Valid calling number is required</span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group whatsapp-choice-group">
+                            <label class="static-label">Is your WhatsApp number the same as your calling number?</label>
+                            <div class="wa-choice-buttons" id="waChoiceButtons">
+                                <button type="button" id="btnYesWa" class="btn-wa-choice">YES</button>
+                                <button type="button" id="btnNoWa" class="btn-wa-choice">NO</button>
+                            </div>
+                            <span id="waSuccessText" class="wa-success-text">Linked to calling number ✓</span>
+                            <div class="wa-input-wrapper" id="waInputWrapper">
+                                <input type="tel" id="whatsappNumber" class="form-control" placeholder=" ">
+                                <label for="whatsappNumber">WhatsApp Number</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="select-wrapper">
+                                <select id="serviceType" class="form-control" required>
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="Videography">Mobile Videography (Cinematic Shots)</option>
+                                    <option value="Video Editing">Video Editing (Reels, Vlogs, Promos)</option>
+                                    <option value="Photography">Photography (Portraits, Events, Fashion)</option>
+                                </select>
+                                <label for="serviceType">Required Service</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="projectDetails" class="form-control" rows="4" placeholder=" " required></textarea>
+                        <label for="projectDetails">Project Details & Requirements</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-whatsapp-submit">
+                        <span>Confirm Booking on WhatsApp</span>
+                        <i class="ri-whatsapp-line submit-icon"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <!-- Mega CTA Section -->
+        <div class="footer-mega-cta">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span>LET'S SHOOT. •&nbsp;</span>
+                    <span>LET'S SHOOT. •&nbsp;</span>
+                    <span>LET'S SHOOT. •&nbsp;</span>
+                    <span>LET'S SHOOT. •&nbsp;</span>
+                </div>
+                <div class="marquee-content" aria-hidden="true">
+                    <span>LET'S SHOOT. •&nbsp;</span>
+                    <span>LET'S SHOOT. •&nbsp;</span>
+                    <span>LET'S SHOOT. •&nbsp;</span>
+                    <span>LET'S SHOOT. •&nbsp;</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-grid">
+            <!-- Left Side: Brand Logo and Tagline -->
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <img src="logo.jpg" alt="smxt cinematix Footer Logo" class="footer-logo-img">
+                    <span class="logo-text">smxt<span class="logo-accent">cinematix</span></span>
+                </a>
+                <p class="footer-moto">Capturing movement. Crafting stories. Delivering perfection.</p>
+            </div>
+
+            <!-- Right Side: Links and Back to Top -->
+            <div class="footer-actions">
+                <div class="footer-bento-contacts">
+                    <!-- Phone Card -->
+                    <a href="tel:9327871330" class="bento-card card-phone">
+                        <div class="bento-icon-box">
+                            <i class="ri-phone-line"></i>
+                        </div>
+                        <div class="bento-info">
+                            <span class="bento-label">
+                                Direct Call
+                                <span class="status-dot-green"></span>
+                            </span>
+                            <span class="bento-value">+91 93278 71330</span>
+                        </div>
+                    </a>
+                    
+                    <!-- Instagram Card -->
+                    <a href="https://instagram.com/smxtcinematix" target="_blank" rel="noopener noreferrer" class="bento-card card-instagram">
+                        <div class="bento-icon-box">
+                            <i class="ri-instagram-line"></i>
+                        </div>
+                        <div class="bento-info">
+                            <span class="bento-label">Instagram</span>
+                            <span class="bento-value">@smxt cinematix</span>
+                        </div>
+                    </a>
+                </div>
+                <a href="#home" class="back-to-top-btn" aria-label="Back to Top">
+                    <i class="ri-arrow-up-line"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p class="copyright">&copy; 2026 smxt cinematix. All rights reserved.</p>
+                <div class="signature-credit">
+                    <span class="sig-base">Built by</span>
+                    <a href="https://rnext.in" target="_blank" rel="noopener noreferrer" class="sig-brand">RNext.in</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox for Portfolio Zoom (Optional premium touch) -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-close"><i class="ri-close-line"></i></div>
+        <div class="lightbox-content">
+            <img src="" alt="Enlarged Showcase" id="lightboxImage">
+        </div>
+    </div>
+
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
