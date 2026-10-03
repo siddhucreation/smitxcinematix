@@ -225,9 +225,9 @@ Message / Details: > "${detailsVal}"
 
 Please reply to confirm the booking!`;
 
-            // Brijesh's Phone number: +91 8238245943
-            const brijeshPhoneNumber = "918238245943";
-            const waUrl = `https://wa.me/${brijeshPhoneNumber}?text=${encodeURIComponent(messageTemplate)}`;
+            // Smit's Phone number: +91 9327871330
+            const smitPhoneNumber = "919327871330";
+            const waUrl = `https://wa.me/${smitPhoneNumber}?text=${encodeURIComponent(messageTemplate)}`;
 
             // Open WhatsApp Web or App link in a new window/tab
             window.open(waUrl, "_blank");
