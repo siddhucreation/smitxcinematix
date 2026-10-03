@@ -225,8 +225,8 @@ Message / Details: > "${detailsVal}"
 
 Please reply to confirm the booking!`;
 
-            // Smit's Phone number: +91 9327871330
-            const smitPhoneNumber = "919327871330";
+            // Smit's Phone number: +91 9327881330
+            const smitPhoneNumber = "919327881330";
             const waUrl = `https://wa.me/${smitPhoneNumber}?text=${encodeURIComponent(messageTemplate)}`;
 
             // Open WhatsApp Web or App link in a new window/tab
