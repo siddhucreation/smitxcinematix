@@ -299,13 +299,7 @@ a {
     color: var(--text-primary);
 }
 
-body {
-  background-image: url('smit.png');
-  background-repeat: no-repeat;                 /* Prevents the image from repeating */
-  background-position: center center;           /* Centers the image */
-  background-size: cover;                        /* Stretches the image to fill the screen */
-  background-attachment: fixed;                 /* Locks the image so it won't scroll */
-}
+
 
 
 
